@@ -1,0 +1,14 @@
+use mydb;
+
+CREATE TABLE `Products`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `product_name` LINESTRING NOT NULL,
+    `count` INT NOT NULL,
+    `isAvailable` BOOLEAN NOT NULL
+);
+CREATE TABLE `Users`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `name` LINESTRING NOT NULL,
+    `surname` LINESTRING NOT NULL,
+    `email` LINESTRING NOT NULL
+);

@@ -1,0 +1,22 @@
+{
+  "name": "ihor_fullstackproject",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "sass": "sass --watch styles/style.scss:static/style.css",
+    "dev": "concurrently \"npm run sass\" nodemon app.js"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "dotenv": "^17.4.2",
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.4",
+    "sass": "^1.99.0"
+  }
+}
